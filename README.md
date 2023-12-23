@@ -1,3 +1,3 @@
-# nx monorepo practice
+# Nx monorepo practice
 
-📦 nx monorepo practice repository
+📦 Nx monorepo practice repository

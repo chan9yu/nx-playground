@@ -1,8 +1,8 @@
 {
-  "name": "nx-monorepo-practice",
+  "name": "@nx-monorepo-practice/root",
   "private": true,
   "version": "0.0.0",
-  "description": "📦 nx monorepo practice repository",
+  "description": "📦 Nx monorepo practice root repository",
   "author": "chan9yu <wry5533@gmail.com>",
   "repository": {
     "type": "git",

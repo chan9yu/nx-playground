@@ -1,0 +1,32 @@
+{
+  "name": "@nx-monorepo-practice/theme",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "📦 Nx monorepo practice theme repository",
+  "author": "chan9yu <wry5533@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chan9yu/nx-monorepo-practice"
+  },
+  "main": "dist/esm/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm run clean && pnpm run build:js && pnpm run build:type",
+    "build:js": "node ./scripts/build.js",
+    "build:type": "tsc --emitDeclarationOnly",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "esbuild": "0.16.17",
+    "typescript": "^5.3.3"
+  }
+}
