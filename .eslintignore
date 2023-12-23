@@ -1,0 +1,44 @@
+# 빌드 파일 및 node_modules 무시
+**/build/**
+**/dist/**
+**/coverage/**
+**/node_modules/**
+
+# 번들러에서 생성된 파일 및 디렉토리 무시
+**/*.min.js
+**/*.min.css
+**/__tests__/**
+**/__mocks__/**
+**/__snapshots__/**
+**/tests/**
+**/test-helpers/**
+**/storybook-static/**
+**/cypress/**
+
+# 설정 파일 무시
+**/.babelrc.json
+**/.eslintrc.json
+**/.stylelintrc.json
+
+# 로그, 빌드 아티팩트 및 기타 사용자 생성 파일 무시
+**/*.log
+**/*.log.*
+**/*.lock
+**/*.gz
+**/npm-debug.log*
+**/.idea/**
+**/.vscode/**
+**/.history
+
+# 에디터 및 IDE 파일 무시
+**/*.idea/**
+**/.vscode/**
+
+# 운영 체제 파일 무시
+**/.DS_Store
+
+# 생성된 문서 무시
+**/docs/**
+
+# 임시 파일 무시
+**/*.tmp
