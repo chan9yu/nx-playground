@@ -7,6 +7,6 @@
     "strict": true,
     "moduleResolution": "node",
     "jsx": "react-jsx",
-    "outDir": "./dist"
+    "outDir": "./dist",
   }
 }
