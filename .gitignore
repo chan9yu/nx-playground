@@ -1,6 +1,7 @@
 # 빌드 파일 및 node_modules 무시
 **/build/**
 **/dist/**
+**/.nx/**
 **/coverage/**
 **/node_modules/**
 

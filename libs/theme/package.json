@@ -2,7 +2,7 @@
   "name": "@nx-monorepo-practice/theme",
   "type": "module",
   "version": "0.0.0",
-  "description": "📦 Nx monorepo practice theme package repository",
+  "description": "📦 Nx monorepo practice theme lib repository",
   "author": "chan9yu <wry5533@gmail.com>",
   "repository": {
     "type": "git",

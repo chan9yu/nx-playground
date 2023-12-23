@@ -9,6 +9,10 @@
     "url": "https://github.com/chan9yu/nx-monorepo-practice"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "nx build",
+    "graph": "nx run-many --target=build --graph"
+  },
+  "devDependencies": {
+    "nx": "^17.2.7"
   }
 }

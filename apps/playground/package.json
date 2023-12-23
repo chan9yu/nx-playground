@@ -2,7 +2,7 @@
   "name": "@nx-monorepo-practice/playground",
   "private": true,
   "version": "0.0.0",
-  "description": "📦 Nx monorepo practice playground service repository",
+  "description": "📦 Nx monorepo practice playground app repository",
   "author": "chan9yu <wry5533@gmail.com>",
   "repository": {
     "type": "git",
