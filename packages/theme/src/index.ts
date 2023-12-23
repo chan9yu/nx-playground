@@ -1,7 +1,2 @@
-function test(a: number, b: number) {
-	return a + b;
-}
-
-export default {
-	test
-};
+export * as classes from './classes';
+export * as vars from './variables';
