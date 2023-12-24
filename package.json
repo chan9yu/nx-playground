@@ -1,31 +1,31 @@
 {
-  "name": "@nx-monorepo-practice/root",
-  "private": true,
-  "version": "0.0.0",
-  "description": "📦 Nx monorepo practice root repository",
-  "author": "chan9yu <wry5533@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/chan9yu/nx-monorepo-practice"
-  },
-  "scripts": {
-    "build": "nx build",
-    "graph": "nx run-many --target=build --graph"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.15.0",
-    "@typescript-eslint/parser": "^6.15.0",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-json-format": "^2.0.1",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-storybook": "^0.6.15",
-    "nx": "^17.2.7",
-    "prettier": "^3.1.1",
-    "typescript": "^5.3.3"
-  }
+	"name": "@nx-monorepo-practice/root",
+	"private": true,
+	"version": "0.0.0",
+	"description": "📦 Nx monorepo practice root repository",
+	"author": "chan9yu <wry5533@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chan9yu/nx-monorepo-practice"
+	},
+	"scripts": {
+		"build": "nx build",
+		"graph": "nx run-many --target=build --graph"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^6.15.0",
+		"@typescript-eslint/parser": "^6.15.0",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-import": "^2.29.1",
+		"eslint-plugin-json-format": "^2.0.1",
+		"eslint-plugin-jsx-a11y": "^6.8.0",
+		"eslint-plugin-react": "^7.33.2",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-simple-import-sort": "^10.0.0",
+		"eslint-plugin-storybook": "^0.6.15",
+		"nx": "^17.2.7",
+		"prettier": "^3.1.1",
+		"typescript": "^5.3.3"
+	}
 }
