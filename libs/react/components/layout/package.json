@@ -1,0 +1,49 @@
+{
+	"name": "@nx-monorepo-practice/react-components-layout",
+	"type": "module",
+	"version": "0.0.1",
+	"description": "📦 Nx monorepo practice react component layout lib repository",
+	"author": "chan9yu <wry5533@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chan9yu/nx-monorepo-practice"
+	},
+	"main": "dist/esm/index.js",
+	"types": "dist/@types/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/esm/index.js",
+			"require": "./dist/cjs/index.js"
+		},
+		"./style.css": {
+			"import": "./dist/esm/index.css",
+			"require": "./dist/cjs/index.css"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"dev": "pnpm build:js --watch && pnpm build:type --watch",
+		"build": "pnpm run clean && pnpm run build:js && pnpm run build:type",
+		"build:js": "node ./scripts/build.js",
+		"build:type": "tsc --emitDeclarationOnly --outDir ./dist/@types",
+		"clean": "rm -rf dist"
+	},
+	"devDependencies": {
+		"@nx-monorepo-practice/theme": "workspace:^",
+		"@types/react": "^18.2.45",
+		"@types/react-dom": "^18.2.18",
+		"@vanilla-extract/css": "^1.14.0",
+		"@vanilla-extract/esbuild-plugin": "^2.3.1",
+		"@vanilla-extract/recipes": "^0.5.1",
+		"@vanilla-extract/sprinkles": "^1.6.1",
+		"autoprefixer": "^10.4.16",
+		"postcss": "^8.4.32"
+	},
+	"peerDependencies": {
+		"@nx-monorepo-practice/esbuild-config": "workspace:^",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	}
+}

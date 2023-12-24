@@ -1,0 +1,38 @@
+{
+	"name": "@nx-monorepo-practice/storybook",
+	"type": "module",
+	"version": "0.0.1",
+	"description": "📦 Nx monorepo practice storybook app repository",
+	"author": "chan9yu <wry5533@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chan9yu/nx-monorepo-practice"
+	},
+	"scripts": {
+		"storybook": "storybook dev -p 6006",
+		"build": "pnpm build-storybook",
+		"build-storybook": "storybook build"
+	},
+	"devDependencies": {
+		"@nx-monorepo-practice/react-components-layout": "workspace:^",
+		"@nx-monorepo-practice/theme": "workspace:^",
+		"@storybook/addon-a11y": "^7.6.6",
+		"@storybook/addon-essentials": "^7.6.6",
+		"@storybook/addon-interactions": "^7.6.6",
+		"@storybook/addon-links": "^7.6.6",
+		"@storybook/addon-onboarding": "^1.0.10",
+		"@storybook/blocks": "^7.6.6",
+		"@storybook/react": "^7.6.6",
+		"@storybook/react-vite": "^7.6.6",
+		"@storybook/test": "^7.6.6",
+		"@vitejs/plugin-react": "^4.2.1",
+		"prop-types": "^15.8.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"storybook": "^7.6.6",
+		"storybook-addon-pseudo-states": "^2.1.2",
+		"storybook-addon-root-attributes": "^2.0.3",
+		"vite": "^5.0.10",
+		"vitest": "^1.1.0"
+	}
+}

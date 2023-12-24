@@ -9,6 +9,9 @@
 		"url": "https://github.com/chan9yu/nx-monorepo-practice"
 	},
 	"scripts": {
+		"dev:all": "pnpm dev:libs & pnpm dev:storybook",
+		"dev:libs": "nx run-many --target=dev --projects='@nx-monorepo-practice/react-components-*'",
+		"dev:storybook": "nx storybook @nx-monorepo-practice/storybook",
 		"build": "nx build",
 		"graph": "nx run-many --target=build --graph"
 	},
