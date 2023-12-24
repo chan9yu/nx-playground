@@ -1,12 +1,12 @@
 {
-	"name": "@nx-monorepo-practice/esbuild-config",
+	"name": "@nx-playground/esbuild-config",
 	"version": "0.0.1",
 	"description": "📦 Nx monorepo practice esbuild-config lib repository",
 	"author": "chan9yu <wry5533@gmail.com>",
 	"main": "index.js",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/chan9yu/nx-monorepo-practice"
+		"url": "https://github.com/chan9yu/nx-playground"
 	},
 	"scripts": {
 		"build": "echo \"Tada!\""

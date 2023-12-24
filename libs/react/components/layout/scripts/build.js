@@ -1,4 +1,4 @@
-import run from '@nx-monorepo-practice/esbuild-config';
+import run from '@nx-playground/esbuild-config';
 import { vanillaExtractPlugin } from '@vanilla-extract/esbuild-plugin';
 
 import pkg from '../package.json' assert { type: 'json' };

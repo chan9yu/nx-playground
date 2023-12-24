@@ -1,4 +1,4 @@
-import { vars } from '@nx-monorepo-practice/theme';
+import { vars } from '@nx-playground/theme';
 import { style } from '@vanilla-extract/css';
 
 export const blockStyle = style({

@@ -1,5 +1,5 @@
-import { Block as _Block } from '@nx-monorepo-practice/react-components-layout';
-import '@nx-monorepo-practice/react-components-layout/style.css';
+import { Block as _Block } from '@nx-playground/react-components-layout';
+import '@nx-playground/react-components-layout/style.css';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof _Block> = {

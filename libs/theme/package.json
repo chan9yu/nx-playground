@@ -1,12 +1,12 @@
 {
-	"name": "@nx-monorepo-practice/theme",
+	"name": "@nx-playground/theme",
 	"type": "module",
 	"version": "0.0.0",
 	"description": "📦 Nx monorepo practice theme lib repository",
 	"author": "chan9yu <wry5533@gmail.com>",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/chan9yu/nx-monorepo-practice"
+		"url": "https://github.com/chan9yu/nx-playground"
 	},
 	"main": "dist/esm/index.js",
 	"types": "dist/@types/index.d.ts",
@@ -28,6 +28,6 @@
 		"clean": "rm -rf dist"
 	},
 	"devDependencies": {
-		"@nx-monorepo-practice/esbuild-config": "workspace:^"
+		"@nx-playground/esbuild-config": "workspace:^"
 	}
 }

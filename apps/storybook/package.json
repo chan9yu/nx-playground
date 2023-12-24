@@ -1,12 +1,12 @@
 {
-	"name": "@nx-monorepo-practice/storybook",
+	"name": "@nx-playground/storybook",
 	"type": "module",
 	"version": "0.0.1",
 	"description": "📦 Nx monorepo practice storybook app repository",
 	"author": "chan9yu <wry5533@gmail.com>",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/chan9yu/nx-monorepo-practice"
+		"url": "https://github.com/chan9yu/nx-playground"
 	},
 	"scripts": {
 		"storybook": "storybook dev -p 6006",
@@ -14,8 +14,8 @@
 		"build-storybook": "storybook build"
 	},
 	"devDependencies": {
-		"@nx-monorepo-practice/react-components-layout": "workspace:^",
-		"@nx-monorepo-practice/theme": "workspace:^",
+		"@nx-playground/react-components-layout": "workspace:^",
+		"@nx-playground/theme": "workspace:^",
 		"@storybook/addon-a11y": "^7.6.6",
 		"@storybook/addon-essentials": "^7.6.6",
 		"@storybook/addon-interactions": "^7.6.6",

@@ -1,3 +1,3 @@
-# Nx monorepo practice
+# Nx monorepo playground
 
-📦 Nx monorepo practice repository
+> 📦 Nx monorepo playground root repository

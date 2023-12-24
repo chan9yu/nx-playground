@@ -1,4 +1,4 @@
-import '@nx-monorepo-practice/theme/themes.css';
+import '@nx-playground/theme/themes.css';
 import type { Preview } from '@storybook/react';
 
 import './style.css';
