@@ -4,13 +4,14 @@ import { CSSProperties, createElement, forwardRef } from 'react';
 
 import { BaseStyle, StyleSprinkles } from '../../core/style.css';
 import { extractSprinkleProps } from '../../utils/properties';
-import type { BoxProps } from './Box.types';
+import { textStyle } from './Text.css';
+import type { TextComponent, TextProps } from './Text.types';
 
-const Box = forwardRef<HTMLElement, BoxProps>((props, ref) => {
-	const { as = 'div', background, color, children } = props;
+const Text: TextComponent = forwardRef<HTMLElement, TextProps>((props, ref) => {
+	const { as = 'p', color = 'gray', background, children, fontSize } = props;
 
 	const childSprinkleProps = extractSprinkleProps(props, Array.from(StyleSprinkles.properties));
-	const className = clsx([BaseStyle, StyleSprinkles(childSprinkleProps), props.className]);
+	const className = clsx([BaseStyle, StyleSprinkles(childSprinkleProps), textStyle({ fontSize }), props.className]);
 
 	const style: CSSProperties = {
 		color: color && vars.colors.$scale?.[color]?.[700],
@@ -28,6 +29,6 @@ const Box = forwardRef<HTMLElement, BoxProps>((props, ref) => {
 	return createElement(as, elementProps, children);
 });
 
-Box.displayName = 'Box';
+Text.displayName = 'Text';
 
-export default Box;
+export default Text;
