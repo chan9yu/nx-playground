@@ -9,8 +9,9 @@
 		"url": "https://github.com/chan9yu/nx-playground"
 	},
 	"scripts": {
-		"storybook": "storybook dev -p 6006",
+		"dev": "pnpm storybook",
 		"build": "pnpm build-storybook",
+		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build"
 	},
 	"dependencies": {

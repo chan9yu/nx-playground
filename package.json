@@ -10,9 +10,9 @@
 	},
 	"scripts": {
 		"dev": "pnpm dev:all",
-		"dev:all": "pnpm dev:libs & pnpm dev:storybook",
-		"dev:libs": "nx run-many --target=dev --projects='@nx-playground/react-components'",
-		"dev:storybook": "nx storybook @nx-playground/storybook",
+		"dev:all": "pnpm dev:components & pnpm dev:storybook",
+		"dev:components": "nx dev @nx-playground/react-components",
+		"dev:storybook": "nx dev @nx-playground/storybook",
 		"build": "nx build",
 		"graph": "nx run-many --target=build --graph"
 	},
