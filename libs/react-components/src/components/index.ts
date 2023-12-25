@@ -1,4 +1,5 @@
 export { Box, type BoxProps } from './Box';
+export { Button, type ButtonProps } from './Button';
 export { Divider, type DividerProps } from './Divider';
 export { Flex, type FlexProps } from './Flex';
 export { Grid, type GridProps } from './Grid';
