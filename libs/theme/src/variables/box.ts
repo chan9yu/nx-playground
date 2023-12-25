@@ -31,7 +31,7 @@ export const spacing = {
 	'96': '24rem'
 };
 
-export const radii = {
+export const radius = {
 	none: '0',
 	sm: '0.125rem',
 	base: '0.25rem',

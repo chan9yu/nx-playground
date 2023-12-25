@@ -36,7 +36,7 @@ const MarginAndPaddingProperties = defineProperties({
 
 const BorderStyleProperties = defineProperties({
 	properties: {
-		borderRadius: vars.box.radii
+		borderRadius: vars.box.radius
 	}
 });
 
