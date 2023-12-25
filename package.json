@@ -9,8 +9,9 @@
 		"url": "https://github.com/chan9yu/nx-playground"
 	},
 	"scripts": {
+		"dev": "pnpm dev:all",
 		"dev:all": "pnpm dev:libs & pnpm dev:storybook",
-		"dev:libs": "nx run-many --target=dev --projects='@nx-playground/react-components-*'",
+		"dev:libs": "nx run-many --target=dev --projects='@nx-playground/react-components'",
 		"dev:storybook": "nx storybook @nx-playground/storybook",
 		"build": "nx build",
 		"graph": "nx run-many --target=build --graph"

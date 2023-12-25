@@ -14,7 +14,7 @@
 		"build-storybook": "storybook build"
 	},
 	"devDependencies": {
-		"@nx-playground/react-components-layout": "workspace:^",
+		"@nx-playground/react-components": "workspace:^",
 		"@nx-playground/theme": "workspace:^",
 		"@storybook/addon-a11y": "^7.6.6",
 		"@storybook/addon-essentials": "^7.6.6",

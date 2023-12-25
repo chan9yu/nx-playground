@@ -1,8 +1,8 @@
 {
-	"name": "@nx-playground/react-components-layout",
+	"name": "@nx-playground/react-components",
 	"type": "module",
 	"version": "0.0.1",
-	"description": "📦 Nx monorepo practice react component layout lib repository",
+	"description": "📦 Nx monorepo practice react-components lib repository",
 	"author": "chan9yu <wry5533@gmail.com>",
 	"repository": {
 		"type": "git",
@@ -29,6 +29,9 @@
 		"build:js": "node ./scripts/build.js",
 		"build:type": "tsc --emitDeclarationOnly --outDir ./dist/@types",
 		"clean": "rm -rf dist"
+	},
+	"dependencies": {
+		"clsx": "^2.0.0"
 	},
 	"devDependencies": {
 		"@nx-playground/theme": "workspace:^",
