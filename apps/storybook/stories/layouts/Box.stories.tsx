@@ -1,11 +1,11 @@
-import { Box as _Box } from '@nx-playground/react-components';
+import { Box } from '@nx-playground/react-components';
 import '@nx-playground/react-components/style.css';
 import { vars } from '@nx-playground/theme';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const meta: Meta<typeof _Box> = {
+const meta: Meta<typeof Box> = {
 	title: 'Layouts/Box',
-	component: _Box,
+	component: Box,
 	parameters: {
 		layout: 'centered'
 	},
@@ -28,7 +28,7 @@ const meta: Meta<typeof _Box> = {
 			control: 'select'
 		}
 	}
-} satisfies Meta<typeof _Box>;
+} satisfies Meta<typeof Box>;
 
 export default meta;
 

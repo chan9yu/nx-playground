@@ -13,6 +13,10 @@
 		"build": "pnpm build-storybook",
 		"build-storybook": "storybook build"
 	},
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
 	"devDependencies": {
 		"@nx-playground/react-components": "workspace:^",
 		"@nx-playground/theme": "workspace:^",
@@ -25,10 +29,10 @@
 		"@storybook/react": "^7.6.6",
 		"@storybook/react-vite": "^7.6.6",
 		"@storybook/test": "^7.6.6",
+		"@types/react": "^18.2.45",
+		"@types/react-dom": "^18.2.18",
 		"@vitejs/plugin-react": "^4.2.1",
 		"prop-types": "^15.8.1",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
 		"storybook": "^7.6.6",
 		"storybook-addon-pseudo-states": "^2.1.2",
 		"storybook-addon-root-attributes": "^2.0.3",

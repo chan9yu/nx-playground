@@ -1,11 +1,11 @@
-import { Text as _Text } from '@nx-playground/react-components';
+import { Text } from '@nx-playground/react-components';
 import '@nx-playground/react-components/style.css';
 import { classes, vars } from '@nx-playground/theme';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const meta: Meta<typeof _Text> = {
+const meta: Meta<typeof Text> = {
 	title: 'Components/Text',
-	component: _Text,
+	component: Text,
 	parameters: {
 		layout: 'centered'
 	},
@@ -28,7 +28,7 @@ const meta: Meta<typeof _Text> = {
 			control: 'select'
 		}
 	}
-} satisfies Meta<typeof _Text>;
+} satisfies Meta<typeof Text>;
 
 export default meta;
 

@@ -1,11 +1,11 @@
-import { Heading as _Heading } from '@nx-playground/react-components';
+import { Heading } from '@nx-playground/react-components';
 import '@nx-playground/react-components/style.css';
 import { classes, vars } from '@nx-playground/theme';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const meta: Meta<typeof _Heading> = {
+const meta: Meta<typeof Heading> = {
 	title: 'Components/Heading',
-	component: _Heading,
+	component: Heading,
 	parameters: {
 		layout: 'centered'
 	},
@@ -28,7 +28,7 @@ const meta: Meta<typeof _Heading> = {
 			control: 'select'
 		}
 	}
-} satisfies Meta<typeof _Heading>;
+} satisfies Meta<typeof Heading>;
 
 export default meta;
 
