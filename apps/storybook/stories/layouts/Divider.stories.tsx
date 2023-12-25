@@ -1,5 +1,4 @@
 import { Box, Divider } from '@nx-playground/react-components';
-import '@nx-playground/react-components/style.css';
 import { vars } from '@nx-playground/theme';
 import type { Meta, StoryObj } from '@storybook/react';
 

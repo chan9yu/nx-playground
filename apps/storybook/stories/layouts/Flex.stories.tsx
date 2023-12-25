@@ -1,5 +1,4 @@
 import { Flex } from '@nx-playground/react-components';
-import '@nx-playground/react-components/style.css';
 import type { Meta, StoryObj } from '@storybook/react';
 
 import {

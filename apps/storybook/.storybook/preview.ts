@@ -1,3 +1,4 @@
+import '@nx-playground/react-components/style.css';
 import '@nx-playground/theme/themes.css';
 import type { Preview } from '@storybook/react';
 
