@@ -20,12 +20,12 @@
 	},
 	"devDependencies": {
 		"@nx-playground/react-components": "workspace:^",
+		"@nx-playground/react-hooks": "workspace:^",
 		"@nx-playground/theme": "workspace:^",
 		"@storybook/addon-a11y": "^7.6.6",
 		"@storybook/addon-essentials": "^7.6.6",
 		"@storybook/addon-interactions": "^7.6.6",
 		"@storybook/addon-links": "^7.6.6",
-		"@storybook/addon-onboarding": "^1.0.10",
 		"@storybook/blocks": "^7.6.6",
 		"@storybook/react": "^7.6.6",
 		"@storybook/react-vite": "^7.6.6",

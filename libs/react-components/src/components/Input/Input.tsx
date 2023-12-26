@@ -1,9 +1,9 @@
+import { useInput } from '@nx-playground/react-hooks';
 import { vars } from '@nx-playground/theme';
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 import { clsx } from 'clsx';
 import { CSSProperties, forwardRef } from 'react';
 
-import { useInput } from '../../hooks';
 import { colorVariant, errorBorderColorVariant, focusBorderColorVariant, inputStyle } from './Input.css';
 import type { InputProps } from './Input.types';
 

@@ -1,7 +1,7 @@
+import { useButton } from '@nx-playground/react-hooks';
 import { clsx } from 'clsx';
 import { MouseEvent, forwardRef } from 'react';
 
-import { useButton } from '../../../../hooks';
 import { useAccordionContext } from '../../context';
 import { accordionButtonStyle } from './AccordionButton.css';
 import type { AccordionButtonProps } from './AccordionButton.types';

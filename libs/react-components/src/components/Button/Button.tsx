@@ -1,9 +1,9 @@
+import { useButton } from '@nx-playground/react-hooks';
 import { vars } from '@nx-playground/theme';
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 import { clsx } from 'clsx';
 import { CSSProperties, forwardRef } from 'react';
 
-import { useButton } from '../../hooks';
 import {
 	activeColorVariant,
 	buttonStyle,

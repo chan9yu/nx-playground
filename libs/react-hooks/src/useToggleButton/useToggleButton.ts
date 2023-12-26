@@ -1,6 +1,6 @@
 import { MouseEvent } from 'react';
 
-import { useButton, useToggle } from '../../hooks';
+import { useButton, useToggle } from '..';
 import type { OverloadedToggleButtonFunction } from './useToggleButton.types';
 
 const useToggleButton: OverloadedToggleButtonFunction = (props: any, isSelected?: boolean): any => {

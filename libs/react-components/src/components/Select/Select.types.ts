@@ -1,5 +1,5 @@
 import { vars } from '@nx-playground/theme';
-import type { UseSelectProps } from '../../hooks';
+import type { UseSelectProps } from '@nx-playground/react-hooks';
 
 type Color = keyof typeof vars.colors.$scale;
 type Size = 'lg' | 'md' | 'sm' | 'xs';

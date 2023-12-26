@@ -1,5 +1,5 @@
+import type { UseInputProps } from '@nx-playground/react-hooks';
 import { vars } from '@nx-playground/theme';
-import type { UseInputProps } from '../../hooks';
 
 type Size = 'lg' | 'md' | 'sm' | 'xs';
 type Color = keyof typeof vars.colors.$scale;

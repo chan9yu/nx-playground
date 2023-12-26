@@ -1,9 +1,9 @@
+import { useSelect } from '@nx-playground/react-hooks';
 import { vars } from '@nx-playground/theme';
 import { assignInlineVars } from '@vanilla-extract/dynamic';
 import { clsx } from 'clsx';
 import { CSSProperties, forwardRef } from 'react';
 
-import { useSelect } from '../../hooks';
 import { colorVariant, errorBorderColorVariant, focusBorderColorVariant, selectStyle } from './Select.css';
 import type { SelectProps } from './Select.types';
 
