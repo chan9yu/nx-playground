@@ -1,9 +1,9 @@
 // hooks
-export { useButton } from './useButton';
+export { default as useButton } from './useButton';
 export { default as useInput } from './useInput';
 export { default as useSelect } from './useSelect';
-export { useToggle } from './useToggle';
-export { useToggleButton } from './useToggleButton';
+export { default as useToggle } from './useToggle';
+export { default as useToggleButton } from './useToggleButton';
 
 // types
 export type * from './useButton';

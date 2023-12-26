@@ -1,2 +1,2 @@
-export { default as useToggle } from './useToggle';
+export { default } from './useToggle';
 export type { ToggleProps, UseToggleReturn } from './useToggle.types';
