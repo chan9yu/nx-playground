@@ -5,9 +5,8 @@ import { CSSProperties, createElement, forwardRef } from 'react';
 import { BaseStyle, StyleSprinkles } from '../../core/style.css';
 import { extractSprinkleProps } from '../../utils/properties';
 import type { GridComponent, GridProps } from './Grid.types';
-import { GridItem } from './children';
 
-const _Grid: GridComponent = forwardRef<HTMLElement, GridProps>((props, ref) => {
+const Grid: GridComponent = forwardRef<HTMLElement, GridProps>((props, ref) => {
 	const {
 		as = 'div',
 		color,
@@ -23,11 +22,12 @@ const _Grid: GridComponent = forwardRef<HTMLElement, GridProps>((props, ref) => 
 		rowGap,
 		templateColumns,
 		templateRows,
-		templateAreas
+		templateAreas,
+		...rest
 	} = props;
 
 	const childSprinkleProps = extractSprinkleProps(props, Array.from(StyleSprinkles.properties));
-	const className = clsx([BaseStyle, StyleSprinkles(childSprinkleProps), props.className]);
+	const className = clsx([BaseStyle, StyleSprinkles(childSprinkleProps), rest.className]);
 
 	const style: CSSProperties = {
 		display: 'grid',
@@ -44,21 +44,17 @@ const _Grid: GridComponent = forwardRef<HTMLElement, GridProps>((props, ref) => 
 		gridRow: row,
 		color: color && vars.colors.$scale?.[color]?.[700],
 		background: background && vars.colors.$scale?.[background]?.[100],
-		...props.style
+		...rest.style
 	};
 
 	const elementProps = {
-		...props,
+		...rest,
 		ref,
 		className,
 		style
 	};
 
 	return createElement(as, elementProps, children);
-});
-
-const Grid = Object.assign(_Grid, {
-	Item: GridItem
 });
 
 Grid.displayName = 'Grid';

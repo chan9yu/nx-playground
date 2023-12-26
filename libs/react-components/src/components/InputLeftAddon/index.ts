@@ -1,2 +1,2 @@
 export { default } from './InputLeftAddon';
-export type { InputLeftAddonProps } from './InputLeftAddon.types';
+export type * from './InputLeftAddon.types';

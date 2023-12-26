@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
 
-import { Text } from '../../../Text';
+import { Text } from '../../components';
 import type { ListItemComponent, ListItemProps } from './ListItem.types';
 
 const ListItem: ListItemComponent = forwardRef<HTMLLIElement, ListItemProps>((props, ref) => {

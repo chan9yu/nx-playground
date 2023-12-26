@@ -1,2 +1,2 @@
-export { default as Text } from './Text';
-export type { TextProps } from './Text.types.ts';
+export { default } from './Text';
+export type * from './Text.types';

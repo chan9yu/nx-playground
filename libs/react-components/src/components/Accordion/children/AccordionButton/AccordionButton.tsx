@@ -26,7 +26,7 @@ const AccordionButton = forwardRef<HTMLButtonElement, AccordionButtonProps>((pro
 	});
 
 	return (
-		<button ref={ref} {...buttonProps}>
+		<button {...buttonProps} ref={ref}>
 			{children}
 		</button>
 	);

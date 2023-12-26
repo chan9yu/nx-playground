@@ -15,34 +15,40 @@ import {
 import type { ButtonProps } from './Button.types';
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
-	const { buttonProps } = useButton(props);
 	const {
 		color = 'gray',
 		children,
-		// isDisabled = false,
+		isDisabled = false,
 		isLoading = false,
 		leftIcon,
 		rightIcon,
 		size = 'md',
-		variant = 'solid'
+		variant = 'solid',
+		...rest
 	} = props;
 
 	const endableColor = vars.colors.$scale[color][500];
 	const hoverColor = variant === 'solid' ? vars.colors.$scale[color][600] : vars.colors.$scale[color][50];
 	const activeColor = variant === 'solid' ? vars.colors.$scale[color][700] : vars.colors.$scale[color][100];
 
-	const className = clsx([buttonStyle({ size, variant }), props.className]);
+	const className = clsx([buttonStyle({ size, variant }), rest.className]);
 	const style: CSSProperties = {
 		...assignInlineVars({
 			[enableColorVariant]: endableColor,
 			[hoverColorVariant]: hoverColor,
 			[activeColorVariant]: activeColor
 		}),
-		...props.style
+		...rest.style
 	};
 
+	const { buttonProps } = useButton({
+		...rest,
+		className,
+		style
+	});
+
 	return (
-		<button {...buttonProps} ref={ref} className={className} style={style}>
+		<button {...buttonProps} ref={ref}>
 			{isLoading && <div className={spinnerStyle({ size })} />}
 			{leftIcon && <span className={spanStyle({ size })}>{leftIcon}</span>}
 			<span>{children}</span>

@@ -1,7 +1,7 @@
-import { ButtonHTMLAttributes } from 'react';
+import type { ButtonHTMLAttributes } from 'react';
 
-type AccordionButtonBaseProps = ButtonHTMLAttributes<HTMLButtonElement>;
+type AccordionButtonExtendsProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
-export type AccordionButtonProps = AccordionButtonBaseProps & {
+export type AccordionButtonProps = AccordionButtonExtendsProps & {
 	itemName?: string;
 };

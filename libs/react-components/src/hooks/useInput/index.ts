@@ -1,2 +1,2 @@
 export { default } from './useInput';
-export type { UseInputProps, UseInputResult } from './useInput.types';
+export type * from './useInput.types';

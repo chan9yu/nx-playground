@@ -7,10 +7,26 @@ import { extractSprinkleProps } from '../../utils/properties';
 import type { FlexComponent, FlexProps } from './Flex.types';
 
 const Flex: FlexComponent = forwardRef<HTMLElement, FlexProps>((props, ref) => {
-	const { as = 'div', color, background, align, basis, direction, grow, justify, shrink, wrap, gap, children } = props;
+	const {
+		as = 'div',
+		color,
+		background,
+		boxShadow,
+		borderRadius,
+		align,
+		basis,
+		direction,
+		grow,
+		justify,
+		shrink,
+		wrap,
+		gap,
+		children,
+		...rest
+	} = props;
 
 	const childSprinkleProps = extractSprinkleProps(props, Array.from(StyleSprinkles.properties));
-	const className = clsx([BaseStyle, StyleSprinkles(childSprinkleProps), props.className]);
+	const className = clsx([BaseStyle, StyleSprinkles(childSprinkleProps), rest.className]);
 
 	const style: CSSProperties = {
 		display: 'flex',
@@ -24,11 +40,11 @@ const Flex: FlexComponent = forwardRef<HTMLElement, FlexProps>((props, ref) => {
 		gap,
 		color: color && vars.colors.$scale?.[color]?.[700],
 		background: background && vars.colors.$scale?.[background]?.[100],
-		...props.style
+		...rest.style
 	};
 
 	const elementProps = {
-		...props,
+		...rest,
 		ref,
 		className,
 		style

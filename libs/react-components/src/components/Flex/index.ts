@@ -1,2 +1,2 @@
-export { default as Flex } from './Flex';
-export type { FlexProps } from './Flex.types.ts';
+export { default } from './Flex';
+export type * from './Flex.types';

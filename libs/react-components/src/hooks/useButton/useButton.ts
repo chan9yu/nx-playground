@@ -2,7 +2,15 @@ import { KeyboardEvent } from 'react';
 import type { BaseButtonProps, OverloadedButtonFunction } from './useButton.types';
 
 const useButton: OverloadedButtonFunction = (props: any): any => {
-	const { elementType = 'button', isDisabled, isLoading, tabIndex, onKeyDown, type = 'button' } = props;
+	const {
+		elementType = 'button', //
+		isDisabled,
+		isLoading,
+		tabIndex,
+		onKeyDown,
+		type = 'button',
+		...rest
+	} = props;
 
 	const disabled = isDisabled || isLoading;
 
@@ -33,7 +41,7 @@ const useButton: OverloadedButtonFunction = (props: any): any => {
 	};
 
 	const baseProps = {
-		...props,
+		...rest,
 		'data-loading': isLoading,
 		tabIndex: disabled ? undefined : tabIndex ?? 0,
 		onKeyDown: handleKeyDown

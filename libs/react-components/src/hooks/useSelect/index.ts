@@ -1,2 +1,2 @@
 export { default } from './useSelect';
-export type { UseSelectProps, UseSelectReturn } from './useSelect.types';
+export type * from './useSelect.types';

@@ -1,2 +1,2 @@
-export { default as Heading } from './Heading';
-export type { HeadingProps } from './Heading.types.ts';
+export { default } from './Heading';
+export type * from './Heading.types';

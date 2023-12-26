@@ -1,11 +1,10 @@
 import { vars } from '@nx-playground/theme';
 import { CSSProperties, forwardRef } from 'react';
 
-import { Flex } from '../Flex';
+import { Flex } from '../../components';
 import type { ListComponent, ListProps } from './List.types';
-import { ListItem } from './children';
 
-const _List: ListComponent = forwardRef<HTMLOListElement, ListProps>((props, ref) => {
+const List: ListComponent = forwardRef<HTMLOListElement, ListProps>((props, ref) => {
 	const { children, listStyleType = 'disc', spacing = '3', variant = 'unordered', ...rest } = props;
 
 	const style: CSSProperties = {
@@ -18,10 +17,6 @@ const _List: ListComponent = forwardRef<HTMLOListElement, ListProps>((props, ref
 			{children}
 		</Flex>
 	);
-});
-
-const List = Object.assign(_List, {
-	Item: ListItem
 });
 
 List.displayName = 'List';

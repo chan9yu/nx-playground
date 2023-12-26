@@ -1,5 +1,5 @@
 import type { CSSProperties, ForwardRefExoticComponent, RefAttributes } from 'react';
-import type { BoxProps } from '../../../Box';
+import type { BoxProps } from '../Box';
 
 export type GridItemComponent = ForwardRefExoticComponent<Omit<GridItemProps, 'ref'>> & RefAttributes<HTMLElement>;
 

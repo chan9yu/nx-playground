@@ -1,2 +1,2 @@
 export { default } from './Grid';
-export type { GridProps } from './Grid.types.ts';
+export type * from './Grid.types';

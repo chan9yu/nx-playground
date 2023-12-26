@@ -5,10 +5,11 @@ import type { AsElementProps, StyleProps } from '../../core/types';
 
 export type TextComponent = ForwardRefExoticComponent<Omit<TextProps, 'ref'> & RefAttributes<HTMLElement>>;
 
-export type TextProps = AsElementProps &
-	StyleProps & {
-		fontSize?: keyof typeof classes.typography.text;
-		align?: CSSProperties['textAlign'];
-		casing?: CSSProperties['textTransform'];
-		decoration?: CSSProperties['textDecoration'];
-	};
+type TextExtendsProps = AsElementProps & StyleProps;
+
+export type TextProps = TextExtendsProps & {
+	align?: CSSProperties['textAlign'];
+	casing?: CSSProperties['textTransform'];
+	decoration?: CSSProperties['textDecoration'];
+	fontSize?: keyof typeof classes.typography.text;
+};

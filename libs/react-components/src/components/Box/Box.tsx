@@ -7,19 +7,27 @@ import { extractSprinkleProps } from '../../utils/properties';
 import type { BoxProps } from './Box.types';
 
 const Box = forwardRef<HTMLElement, BoxProps>((props, ref) => {
-	const { as = 'div', background, color, children } = props;
+	const {
+		as = 'div', //
+		background,
+		borderRadius,
+		boxShadow,
+		color,
+		children,
+		...rest
+	} = props;
 
 	const childSprinkleProps = extractSprinkleProps(props, Array.from(StyleSprinkles.properties));
-	const className = clsx([BaseStyle, StyleSprinkles(childSprinkleProps), props.className]);
+	const className = clsx([BaseStyle, StyleSprinkles(childSprinkleProps), rest.className]);
 
 	const style: CSSProperties = {
 		color: color && vars.colors.$scale?.[color]?.[700],
 		background: background && vars.colors.$scale?.[background]?.[100],
-		...props.style
+		...rest.style
 	};
 
 	const elementProps = {
-		...props,
+		...rest,
 		ref,
 		className,
 		style

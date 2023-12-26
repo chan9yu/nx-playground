@@ -1,7 +1,7 @@
 import type { HTMLAttributes } from 'react';
 
-type AccordionPanelBaseProps = HTMLAttributes<HTMLDivElement>;
+type AccordionPanelExtendsProps = HTMLAttributes<HTMLDivElement>;
 
-export type AccordionPanelProps = AccordionPanelBaseProps & {
+export type AccordionPanelProps = AccordionPanelExtendsProps & {
 	itemName?: string;
 };

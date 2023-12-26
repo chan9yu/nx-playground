@@ -8,19 +8,19 @@ import { headingStyle } from './Heading.css';
 import type { HeadingProps } from './Heading.types';
 
 const Heading = forwardRef<HTMLElement, HeadingProps>((props, ref) => {
-	const { as = 'h1', fontSize, background, color = 'gray', children } = props;
+	const { as = 'h1', fontSize, background, color = 'gray', children, ...rest } = props;
 
 	const childSprinkleProps = extractSprinkleProps(props, Array.from(StyleSprinkles.properties));
-	const className = clsx([BaseStyle, StyleSprinkles(childSprinkleProps), headingStyle({ fontSize }), props.className]);
+	const className = clsx([BaseStyle, StyleSprinkles(childSprinkleProps), headingStyle({ fontSize }), rest.className]);
 
 	const style: CSSProperties = {
 		color: color && vars.colors.$scale?.[color]?.[700],
 		background: background && vars.colors.$scale?.[background]?.[100],
-		...props.style
+		...rest.style
 	};
 
 	const elementProps = {
-		...props,
+		...rest,
 		ref,
 		className,
 		style

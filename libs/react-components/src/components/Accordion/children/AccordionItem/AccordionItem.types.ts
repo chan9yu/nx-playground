@@ -1,8 +1,8 @@
 import { HTMLAttributes, ReactNode } from 'react';
 
-type AccordionItemBaseProps = Omit<HTMLAttributes<HTMLDivElement>, 'children'>;
+type AccordionItemExtendsProps = Omit<HTMLAttributes<HTMLDivElement>, 'children'>;
 
-export type AccordionItemProps = AccordionItemBaseProps & {
+export type AccordionItemProps = AccordionItemExtendsProps & {
 	children: ReactNode[];
 	itemName: string;
 };

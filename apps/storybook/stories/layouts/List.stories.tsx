@@ -1,4 +1,4 @@
-import { List } from '@nx-playground/react-components';
+import { List, ListItem } from '@nx-playground/react-components';
 import { vars } from '@nx-playground/theme';
 import type { Meta, StoryObj } from '@storybook/react';
 import { CSSProperties } from 'react';
@@ -38,17 +38,15 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-List.Item.displayName = 'List.Item';
-
 export const ListStory: Story = {
 	args: {
 		spacing: '3'
 	},
 	render: args => (
 		<List {...args}>
-			<List.Item fontSize="md">1번</List.Item>
-			<List.Item fontSize="md">2번</List.Item>
-			<List.Item fontSize="md">3번</List.Item>
+			<ListItem fontSize="md">1번</ListItem>
+			<ListItem fontSize="md">2번</ListItem>
+			<ListItem fontSize="md">3번</ListItem>
 		</List>
 	)
 };
@@ -60,9 +58,9 @@ export const OrderedListStory: Story = {
 	},
 	render: args => (
 		<List {...args}>
-			<List.Item fontSize="md">1번</List.Item>
-			<List.Item fontSize="md">2번</List.Item>
-			<List.Item fontSize="md">3번</List.Item>
+			<ListItem fontSize="md">1번</ListItem>
+			<ListItem fontSize="md">2번</ListItem>
+			<ListItem fontSize="md">3번</ListItem>
 		</List>
 	)
 };
@@ -74,9 +72,9 @@ export const UnorderedListStory: Story = {
 	},
 	render: args => (
 		<List {...args}>
-			<List.Item fontSize="md">1번</List.Item>
-			<List.Item fontSize="md">2번</List.Item>
-			<List.Item fontSize="md">3번</List.Item>
+			<ListItem fontSize="md">1번</ListItem>
+			<ListItem fontSize="md">2번</ListItem>
+			<ListItem fontSize="md">3번</ListItem>
 		</List>
 	)
 };

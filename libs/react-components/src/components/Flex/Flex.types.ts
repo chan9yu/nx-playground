@@ -1,7 +1,7 @@
-import type { CSSProperties, ForwardRefExoticComponent } from 'react';
-import { BoxProps } from '../Box';
+import type { CSSProperties, ForwardRefExoticComponent, RefAttributes } from 'react';
+import type { BoxProps } from '../Box';
 
-export type FlexComponent = ForwardRefExoticComponent<FlexProps>;
+export type FlexComponent = ForwardRefExoticComponent<Omit<FlexProps, 'ref'> & RefAttributes<HTMLElement>>;
 
 export type FlexProps = BoxProps & {
 	align?: CSSProperties['alignItems'];

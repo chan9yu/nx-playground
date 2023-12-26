@@ -6,7 +6,7 @@ import { inputLeftAddonStyle } from './InputLeftAddon.css';
 import type { InputLeftAddonProps } from './InputLeftAddon.types';
 
 const InputLeftAddon = forwardRef<HTMLDivElement, InputLeftAddonProps>((props, ref) => {
-	const { size = 'md', color = 'gray', children } = props;
+	const { children, color = 'gray', size = 'md' } = props;
 
 	const className = clsx([inputLeftAddonStyle({ size })]);
 	const style: CSSProperties = {
