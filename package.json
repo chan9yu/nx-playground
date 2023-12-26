@@ -10,7 +10,7 @@
 	},
 	"scripts": {
 		"dev": "pnpm dev:all",
-		"dev:all": "pnpm dev:components & pnpm dev:hooks & pnpm dev:storybook",
+		"dev:all": "nx run-many -t dev",
 		"dev:components": "nx dev @nx-playground/react-components",
 		"dev:hooks": "nx dev @nx-playground/react-hooks",
 		"dev:storybook": "nx dev @nx-playground/storybook",

@@ -14,6 +14,7 @@ export { default as List } from './List';
 export { default as ListItem } from './ListItem';
 export { default as Select } from './Select';
 export { default as Text } from './Text';
+export { Toast, ToastContainer, ToastContext, ToastProvider, useToast } from './Toast';
 
 // types
 export type * from './Accordion';
@@ -31,3 +32,4 @@ export type * from './List';
 export type * from './ListItem';
 export type * from './Select';
 export type * from './Text';
+export type { ToastConfigProps, ToastContextType, ToastPayload } from './Toast';
