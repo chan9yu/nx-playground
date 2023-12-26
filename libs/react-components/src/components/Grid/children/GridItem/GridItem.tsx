@@ -2,8 +2,8 @@ import { vars } from '@nx-playground/theme';
 import { clsx } from 'clsx';
 import { CSSProperties, createElement, forwardRef } from 'react';
 
-import { BaseStyle, StyleSprinkles } from '../../core/style.css';
-import { extractSprinkleProps } from '../../utils/properties';
+import { BaseStyle, StyleSprinkles } from '../../../../core/style.css';
+import { extractSprinkleProps } from '../../../../utils/properties';
 import type { GridItemComponent, GridItemProps } from './GridItem.types';
 
 const GridItem: GridItemComponent = forwardRef<HTMLElement, GridItemProps>((props, ref) => {

@@ -5,8 +5,9 @@ import { CSSProperties, createElement, forwardRef } from 'react';
 import { BaseStyle, StyleSprinkles } from '../../core/style.css';
 import { extractSprinkleProps } from '../../utils/properties';
 import type { GridComponent, GridProps } from './Grid.types';
+import { GridItem } from './children';
 
-const Grid: GridComponent = forwardRef<HTMLElement, GridProps>((props, ref) => {
+const _Grid: GridComponent = forwardRef<HTMLElement, GridProps>((props, ref) => {
 	const {
 		as = 'div',
 		color,
@@ -54,6 +55,10 @@ const Grid: GridComponent = forwardRef<HTMLElement, GridProps>((props, ref) => {
 	};
 
 	return createElement(as, elementProps, children);
+});
+
+const Grid = Object.assign(_Grid, {
+	Item: GridItem
 });
 
 Grid.displayName = 'Grid';

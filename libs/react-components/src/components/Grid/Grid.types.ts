@@ -1,7 +1,7 @@
-import type { CSSProperties, ForwardRefExoticComponent } from 'react';
-import { BoxProps } from '../Box';
+import type { CSSProperties, ForwardRefExoticComponent, RefAttributes } from 'react';
+import type { BoxProps } from '../Box';
 
-export type GridComponent = ForwardRefExoticComponent<GridProps>;
+export type GridComponent = ForwardRefExoticComponent<Omit<GridProps, 'ref'>> & RefAttributes<HTMLElement>;
 
 export type GridProps = BoxProps & {
 	autoColumns?: CSSProperties['gridAutoColumns'];
