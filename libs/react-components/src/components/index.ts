@@ -6,4 +6,5 @@ export { Flex, type FlexProps } from './Flex';
 export { Grid, type GridProps } from './Grid';
 export { GridItem, type GridItemProps } from './GridItem';
 export { Heading, type HeadingProps } from './Heading';
+export { default as List } from './List';
 export { Text, type TextProps } from './Text';
